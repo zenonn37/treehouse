@@ -1,0 +1,41 @@
+// Place all the styles related to the statuses controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "bootstrap";
+
+ //css variables
+
+ $lightGray: #FAFAFA;
+
+//body styles
+
+body{
+	
+	padding-top: 40px;
+
+}
+
+.status{
+	border-bottom: solid 1px #CCC;
+	paddding: 5px 0;
+
+	p{
+	  margin: 4px 0;
+	}
+
+	.admin{
+	display:none;
+	}
+
+ &.hover .admin{
+	display: inline;
+	}
+
+	&.hover{
+	background:$lightGray;
+	}
+
+}
+
+
