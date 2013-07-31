@@ -1,5 +1,6 @@
 class StatusesController < ApplicationController
-  # GET /statuses
+ 
+ # GET /statuses
   # GET /statuses.json
   def index
     @statuses = Status.all
@@ -71,7 +72,8 @@ class StatusesController < ApplicationController
 
   # DELETE /statuses/1
   # DELETE /statuses/1.json
-  def destroy
+
+    def destroy
     @status = Status.find(params[:id])
     @status.destroy
 
@@ -80,4 +82,9 @@ class StatusesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
 end
+
+
+
+
